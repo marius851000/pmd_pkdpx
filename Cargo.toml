@@ -1,11 +1,15 @@
 [package]
 name = "pmd_pkdpx"
-version = "0.1.0"
-authors = ["marius david <mariusdavid@laposte.net>"]
+version = "1.0.0"
+authors = ["marius851000 <mariusdavid@laposte.net>"]
 edition = "2018"
-
+description = "A library that can read pkdpx file, a compression algoritm used in pokemon mystery dungeon games"
+repository = "https://github.com/marius851000/pmd_cpack"
+keywords = [ "parser" ]
+categories = [ "parser-implementations" ]
+license = "CC0-1.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 log = "0.4.8"
-io_partition = { path = "../io_partition" }
+io_partition = "1.0.0"
