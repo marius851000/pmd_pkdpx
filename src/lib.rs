@@ -125,7 +125,7 @@ fn decompress_px_raw<T: Read + Seek>(
 ) -> Result<Vec<u8>, PXError> {
     let mut result = Vec::new();
     let current_file_position = file.seek(SeekFrom::Current(0))?;
-    let current_file_len = file.seek(SeekFrom::Start(0))?;
+    let current_file_len = file.seek(SeekFrom::End(0))?;
     let mut raw_file = Partition::new(
         file,
         current_file_position,
